@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiply / Divide Numbers</title>
+    <style>
+      .container {
+        text-align: center;
+        margin: 5rem;
+      }
+      input {
+        margin: 10px;
+      }
+      button {
+        padding: 8px;
+        border-radius: 15px;
+        border: solid 1px black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>JavaScript Function to Multiply/Divide Given Numbers</h1>
+      <label>First Number: </label>
+      <input type="number" placeholder="Enter first number" id="num1" /> <br />
+      <label>Second Number: </label>
+      <input type="number" placeholder="Enter second number" id="num2" /> <br />
+      <button type="submit" id="multiply" onclick="multiplyNum()">
+        Multiply
+      </button>
+      <button type="submit" id="divide" onclick="divideNum()">Divide</button>
+      <h3 id="res"></h3>
+    </div>
+    <script>
+      function multiplyNum() {
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+        document.getElementById("res").innerHTML =
+          "The Result is: " + num1 * num2;
+      }
+      function divideNum() {
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+        document.getElementById("res").innerHTML =
+          "The Result is: " + num1 / num2;
+      }
+    </script>
+  </body>
+</html>
